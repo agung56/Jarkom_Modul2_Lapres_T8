@@ -22,7 +22,7 @@ Sintaks file **topologi.sh**
 10. Membuat web **http://penanjakan.semerut08.pw** yang memiliki *DocumentRoot* pada **/var/www/penanjakan.semerut08.pw**
 11. pada folder **/public** dibolehkan *directory listing* namun folder yang ada di dalamnya tidak boleh
 12. Mengganti default error 404 dari Apache menjadi mengarah ke file **404.html** yang ada pada folder **/errors**
-13. Membuat alias untuk menyederhanakan url dari **http://penanjakan.semerut08.pw/public/javascripts menjadi **http://penanjakan.semerut08.pw/js**
+13. Membuat alias untuk menyederhanakan url dari **http://penanjakan.semerut08.pw/public/javascripts** menjadi **http://penanjakan.semerut08.pw/js**
 14. Mengatur domain **http://naik.gunung.semerut08.pw** pada port 8888. *DocumentRoot* web berada pada **/var/www/naik.gunung.semerut08.pw**
 15. Membuat autentikasi web **http://naik.gunung.semerut08.pw** dengan username **"semeru"** dan password **"kuynaikgunung"**
 16. Meridirect **IP PROBOLINGGO** menuju ke **http://semerut08.pw**
