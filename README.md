@@ -3,8 +3,11 @@
 1. Kadek Nesya Kurniadewi (05311840000009)
 2. Agung Mulyono (05311840000035)
 
-
 Soal Shift Modul2 https://drive.google.com/drive/folders/1Gb90AYZSb-qw38avjn2eKAPxouR3fS8a
+
+#### Membuat Topologi Jaringan
+Sintaks file **topologi.sh**
+
 
 #### Soal 
 1. Membuat domain utama dengan alamat **http://semerut08.pw**
