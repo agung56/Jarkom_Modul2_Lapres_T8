@@ -25,5 +25,5 @@ Sintaks file **topologi.sh**
 13. Membuat alias untuk menyederhanakan url dari **http://penanjakan.semerut08.pw/public/javascripts** menjadi **http://penanjakan.semerut08.pw/js**
 14. Mengatur domain **http://naik.gunung.semerut08.pw** pada port 8888. *DocumentRoot* web berada pada **/var/www/naik.gunung.semerut08.pw**
 15. Membuat autentikasi web **http://naik.gunung.semerut08.pw** dengan username **"semeru"** dan password **"kuynaikgunung"**
-16. Meridirect **IP PROBOLINGGO** menuju ke **http://semerut08.pw**
+16. Meredirect **IP PROBOLINGGO** menuju ke **http://semerut08.pw**
 17. Karena pengunjung pada **/var/www/penanjakan.semerut08.pw/public/images** sangat banyak maka semua request gambar yang memiliki substring "semeru" akan diarahkan menuju semeru.jpg
