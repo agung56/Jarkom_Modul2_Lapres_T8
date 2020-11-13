@@ -147,23 +147,64 @@ cp /etc/bind/db.local /etc/bind/delegasi/gunung.semerut08.pw
 * Setelah itu restart bind9 dengan menggunakan perintah `service bind9 restart`<br>
 ### 8. Mengatur web server dengan domain **http://semerut08.pw** memiliki *DocumentRoot* pada **/var/www/semerut08.pw**
 #### Penyelesaian
-
-### 9. Mengaktifkan mod rewrite agar url berubah dari **http://semerut08.pw/index.php/home** menjadi **http://semerut08.pw/home**
+* Install apache2 di **PROBOLINGGO** `apt-get install apache2`
+* Install php5 di **PROBOLINGGO** `apt-get install php5`
+* Pindah ke direktori **/etc/apache2/sites-available** dan copy file **default** ke file **semerut08.pw** `cp /etc/apache2/sites-available/default /etc/apache2/sites-available/semerut08.pw`
+* Buka file **semerut08.pw** dan tambahkan konfigurasi seperti dibawah `nano /etc/apache2/sites-available/semerut08.pw`
+```
+ServerName semerut08.pw
+ServerAlias www.semerut08.pw
+```
+![serversemerut](https://github.com/agung56/Jarkom_Modul2_Lapres_T8/blob/main/img/serversemerut08.png)
+* Aktifkan konfigurasi **semerut08.pw** dengan menggunakan perintah `a2ensite semerut08.pw` dan restart apache2 dengan mengetikkan `service apache2 restart`
+* Pindah ke directori **/var/www** `cd /var/www`. Lalu unzip file hasil download dari **wget 10.151.36.202/semeru.pw.zip** dan ubah nama menjadi **semerut08.pw**
+### 9. Mengaktifkan mod rewrite agar url berubah dari http://semerut08.pw/index.php/home menjadi http://semerut08.pw/home
 #### Penyelesaian
-
+* Jalankan perintah `a2enmod rewrite` untuk mengaktifkan *module rewrite*
+* Restart apache2 menggunakan perintah `service apache2 restart`
+* Pindah ke direktori **/var/www/semerut08.pw** dan buat file **.htaccess** dengan isi file
+![htaccess]()
+* Kemudian buka file **/etc/apache2/sites-available/semerut08.pw** dan tambahkan konfigurasi berikut
+```
+<Directory /var/www/semerut08.pw>
+     Options +FollowSymLinks -Multiviews
+     AllowOverride All
+ </Directory>
+ ```
+ * restart apache2 dengan menggunakan perintah `service apache2 restart`
 ### 10. Membuat web **http://penanjakan.semerut08.pw** yang memiliki *DocumentRoot* pada **/var/www/penanjakan.semerut08.pw**
 #### Penyelesaian
-
+* Pindah ke direktori **/etc/apache2/sites-available** dan copy file **default** ke file **penanjakan.semerut08.pw** `cp /etc/apache2/sites-available/default /etc/apache2/sites-available/penanjakan.semerut08.pw`
+* Buka file **penanjakan.semerut08.pw** dan tambahkan konfigurasi seperti dibawah `nano /etc/apache2/sites-available/penanjakan.semerut08.pw`
+```
+ServerName penanjakan.semerut08.pw
+ServerAlias www.penanjakan.semerut08.pw
+```
+![penanjakansemeru]()<br>
+* Aktifkan konfigurasi **penanjakan.semerut08.pw** dengan menggunakan perintah `a2ensite penanjakan.semerut08.pw` dan restart apache2 dengan mengetikkan `service apache2 restart`
+* Pindah ke directori **/var/www** `cd /var/www`. Lalu unzip file hasil download dari **wget 10.151.36.202/penanjakan.semeru.pw.zip** dan ubah nama menjadi **penanjakan.semerut08.pw**
 ### 11. pada folder **/public** dibolehkan *directory listing* namun folder yang ada di dalamnya tidak boleh
 #### Penyelesaian
-
+* Tambahkan konfigurasi pada file **/etc/apache2/sites-available/penanjakan.semerut08.pw** seperti dibawah
+![penanjakansemeru2]()
+* Setelah itu restart apache2 dengan mengetikkan `service apache2 restart`
 ### 12. Mengganti default error 404 dari Apache menjadi mengarah ke file **404.html** yang ada pada folder **/errors**
 #### Penyelesaian
-
-### 13. Membuat alias untuk menyederhanakan url dari **http://penanjakan.semerut08.pw/public/javascripts** menjadi
-**http://penanjakan.semerut08.pw/js**
+* Pindah ke direktori **/var/www/penanjakan.semerut08.pw** dan buat file **.htaccess** dengan isi file
+![htaccesspenanjakan]()
+* Kemudian buka file **/etc/apache2/sites-available/penanjakan.semerut08.pw** dan tambahkan 
+```
+<Directory /var/www/penanjakan.semerut08.pw>
+     Options +FollowSymLinks -Multiviews
+     AllowOverride All
+ </Directory>
+```
+* Setelah itu restart apache2 dengan mengetikkan `service apache2 restart`
+### 13. Membuat alias untuk menyederhanakan url dari http://penanjakan.semerut08.pw/public/javascripts menjadi http://penanjakan.semerut08.pw/js
 #### Penyelesaian
-
+* Buka file **/etc/apache2/sites-available/penanjakan.semerut08.pw** dan tambahkan konfigurasi seperti berikut<br>
+![alias]()<br>
+* Setelah itu restart apache2 dengan mengetikkan `service apache2 restart`
 ### 14. Mengatur domain **http://naik.gunung.semerut08.pw** pada port 8888. *DocumentRoot* web berada pada **/var/www/naik.gunung.semerut08.pw**
 #### Penyelesaian
 
@@ -172,6 +213,8 @@ cp /etc/bind/db.local /etc/bind/delegasi/gunung.semerut08.pw
 
 ### 16. Meredirect IP **PROBOLINGGO** menuju ke **http://semerut08.pw**
 #### Penyelesaian
-
+* Buka file **/etc/apache2/sites-available/default** dan tambahkan konfigurasi seperti berikut<br>
+![redirect]()<br>
+* Setelah itu restart apache2 dengan mengetikkan `service apache2 restart`
 ### 17. Karena pengunjung pada **/var/www/penanjakan.semerut08.pw/public/images** sangat banyak maka semua request gambar yang memiliki substring "semeru" akan diarahkan menuju semeru.jpg
 #### Penyelesaian
