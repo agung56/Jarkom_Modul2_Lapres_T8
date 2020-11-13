@@ -5,7 +5,7 @@
 
 Soal Shift Modul2 https://drive.google.com/drive/folders/1Gb90AYZSb-qw38avjn2eKAPxouR3fS8a
 
-#### Membuat Topologi Jaringan
+### Membuat Topologi Jaringan
 Sintaks file **topologi.sh**
 
 * Setelah membuat file **topologi.sh**, kemudian bash file tersebut dengan perintah `bash topologi.sh`
@@ -21,7 +21,7 @@ Sintaks file **topologi.sh**
 * Setelah itu lakukan update dengan mengetikkan `apt-get update`
 
 
-#### Soal dan Penyelesaian
+### Soal dan Penyelesaian
 1. Membuat domain utama dengan alamat **http://semerut08.pw**
 #### Penyelesaian
 
