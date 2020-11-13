@@ -14,10 +14,11 @@ Sintaks file **topologi.sh**
 * Setting IP pada setiap UML dengan mengetikkan `nano /etc/network/interfaces`
 * Restart network pada semua UML dengan mengetikkan `service networking restart`
 * Agar UML selain **SURABAYA** bisa melakukan koneksi ke jaringan luar, maka ketikkan `iptables –t nat –A POSTROUTING –o eth0 –j MASQUERADE –s 192.168.0.0/16`
-* Export proxy pada setiap UML dengan sintaks
-`export http_proxy=”http://DPTSI-564876-66b39:c3f12@proxy.its.ac.id:8080”`
-`export https_proxy=”http://DPTSI-564876-66b39:c3f12@proxy.its.ac.id:8080”`
-`export ftp_proxy=”http://DPTSI-564876-66b39:c3f12@proxy.its.ac.id:8080”`
+* Export proxy pada setiap UML dengan sintaks <br>
+`export http_proxy=”http://DPTSI-564876-66b39:c3f12@proxy.its.ac.id:8080”` <br>
+`export https_proxy=”http://DPTSI-564876-66b39:c3f12@proxy.its.ac.id:8080”` <br>
+`export ftp_proxy=”http://DPTSI-564876-66b39:c3f12@proxy.its.ac.id:8080”` <br>
+* Setelah itu lakukan update dengan mengetikkan `apt-get update`
 
 
 #### Soal dan Penyelesaian
