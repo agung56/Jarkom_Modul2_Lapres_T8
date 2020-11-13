@@ -62,7 +62,7 @@ zone "semerut08.pw"{
 * Setelah itu restart bind9 dengan menggunakan perintah `service bind9 restart`<br>
 ### 4. Membuat reverse domain untuk domain utama
 #### Penyelesaian
-* Buka `nano /etc/bind/jarkom/semerut08.pw`
+* Buka `nano /etc/bind/named.conf.local`
 * Tambahkan konfigurasi berikut ke dalam file **named.conf.local**<br>
 ```
 zone "83.151.10.in-addr.arpa" {
