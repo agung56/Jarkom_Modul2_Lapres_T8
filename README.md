@@ -181,7 +181,7 @@ ServerAlias www.semerut08.pw
 ServerName penanjakan.semerut08.pw
 ServerAlias www.penanjakan.semerut08.pw
 ```
-![penanjakansemeru](https://github.com/agung56/Jarkom_Modul2_Lapres_T8/blob/main/img/penanjakansemeru.png)<br>
+![penanjakansemerut](https://github.com/agung56/Jarkom_Modul2_Lapres_T8/blob/main/img/penanjakansemerut.png)<br>
 * Aktifkan konfigurasi **penanjakan.semerut08.pw** dengan menggunakan perintah `a2ensite penanjakan.semerut08.pw` dan restart apache2 dengan mengetikkan `service apache2 restart`
 * Pindah ke directori **/var/www** `cd /var/www`. Lalu unzip file hasil download dari **wget 10.151.36.202/penanjakan.semeru.pw.zip** dan ubah nama menjadi **penanjakan.semerut08.pw**
 ### 11. pada folder **/public** dibolehkan *directory listing* namun folder yang ada di dalamnya tidak boleh
