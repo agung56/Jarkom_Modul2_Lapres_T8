@@ -163,7 +163,7 @@ ServerAlias www.semerut08.pw
 * Jalankan perintah `a2enmod rewrite` untuk mengaktifkan *module rewrite*
 * Restart apache2 menggunakan perintah `service apache2 restart`
 * Pindah ke direktori **/var/www/semerut08.pw** dan buat file **.htaccess** dengan isi file
-![htaccess]()
+![htaccess](https://github.com/agung56/Jarkom_Modul2_Lapres_T8/blob/main/img/htaccess.png)
 * Kemudian buka file **/etc/apache2/sites-available/semerut08.pw** dan tambahkan konfigurasi berikut
 ```
 <Directory /var/www/semerut08.pw>
@@ -171,6 +171,7 @@ ServerAlias www.semerut08.pw
      AllowOverride All
  </Directory>
  ```
+ ![semerut08pw](https://github.com/agung56/Jarkom_Modul2_Lapres_T8/blob/main/img/semerut08pw.png)
  * restart apache2 dengan menggunakan perintah `service apache2 restart`
 ### 10. Membuat web **http://penanjakan.semerut08.pw** yang memiliki *DocumentRoot* pada **/var/www/penanjakan.semerut08.pw**
 #### Penyelesaian
@@ -180,18 +181,18 @@ ServerAlias www.semerut08.pw
 ServerName penanjakan.semerut08.pw
 ServerAlias www.penanjakan.semerut08.pw
 ```
-![penanjakansemeru]()<br>
+![penanjakansemeru](https://github.com/agung56/Jarkom_Modul2_Lapres_T8/blob/main/img/penanjakansemeru.png)<br>
 * Aktifkan konfigurasi **penanjakan.semerut08.pw** dengan menggunakan perintah `a2ensite penanjakan.semerut08.pw` dan restart apache2 dengan mengetikkan `service apache2 restart`
 * Pindah ke directori **/var/www** `cd /var/www`. Lalu unzip file hasil download dari **wget 10.151.36.202/penanjakan.semeru.pw.zip** dan ubah nama menjadi **penanjakan.semerut08.pw**
 ### 11. pada folder **/public** dibolehkan *directory listing* namun folder yang ada di dalamnya tidak boleh
 #### Penyelesaian
 * Tambahkan konfigurasi pada file **/etc/apache2/sites-available/penanjakan.semerut08.pw** seperti dibawah
-![penanjakansemeru2]()
+![penanjakansemeru2](https://github.com/agung56/Jarkom_Modul2_Lapres_T8/blob/main/img/penanjakansemeru2.png)
 * Setelah itu restart apache2 dengan mengetikkan `service apache2 restart`
 ### 12. Mengganti default error 404 dari Apache menjadi mengarah ke file **404.html** yang ada pada folder **/errors**
 #### Penyelesaian
 * Pindah ke direktori **/var/www/penanjakan.semerut08.pw** dan buat file **.htaccess** dengan isi file
-![htaccesspenanjakan]()
+![htaccesspenanjakan](https://github.com/agung56/Jarkom_Modul2_Lapres_T8/blob/main/img/htaccesspenanjakan.png)
 * Kemudian buka file **/etc/apache2/sites-available/penanjakan.semerut08.pw** dan tambahkan 
 ```
 <Directory /var/www/penanjakan.semerut08.pw>
@@ -203,7 +204,7 @@ ServerAlias www.penanjakan.semerut08.pw
 ### 13. Membuat alias untuk menyederhanakan url dari http://penanjakan.semerut08.pw/public/javascripts menjadi http://penanjakan.semerut08.pw/js
 #### Penyelesaian
 * Buka file **/etc/apache2/sites-available/penanjakan.semerut08.pw** dan tambahkan konfigurasi seperti berikut<br>
-![alias]()<br>
+![alias](https://github.com/agung56/Jarkom_Modul2_Lapres_T8/blob/main/img/alias.png)<br>
 * Setelah itu restart apache2 dengan mengetikkan `service apache2 restart`
 ### 14. Mengatur domain **http://naik.gunung.semerut08.pw** pada port 8888. *DocumentRoot* web berada pada **/var/www/naik.gunung.semerut08.pw**
 #### Penyelesaian
@@ -214,7 +215,7 @@ ServerAlias www.penanjakan.semerut08.pw
 ### 16. Meredirect IP **PROBOLINGGO** menuju ke **http://semerut08.pw**
 #### Penyelesaian
 * Buka file **/etc/apache2/sites-available/default** dan tambahkan konfigurasi seperti berikut<br>
-![redirect]()<br>
+![redirect](https://github.com/agung56/Jarkom_Modul2_Lapres_T8/blob/main/img/redirect.png)<br>
 * Setelah itu restart apache2 dengan mengetikkan `service apache2 restart`
 ### 17. Karena pengunjung pada **/var/www/penanjakan.semerut08.pw/public/images** sangat banyak maka semua request gambar yang memiliki substring "semeru" akan diarahkan menuju semeru.jpg
 #### Penyelesaian
