@@ -15,11 +15,10 @@ Sintaks file **topologi.sh**
 * Restart network pada semua UML dengan mengetikkan `service networking restart`
 * Agar UML selain **SURABAYA** bisa melakukan koneksi ke jaringan luar, maka ketikkan `iptables –t nat –A POSTROUTING –o eth0 –j MASQUERADE –s 192.168.0.0/16`
 * Export proxy pada setiap UML dengan sintaks
-`
-export http_proxy=”http://DPTSI-564876-66b39:c3f12@proxy.its.ac.id:8080”
-export https_proxy=”http://DPTSI-564876-66b39:c3f12@proxy.its.ac.id:8080”
-export ftp_proxy=”http://DPTSI-564876-66b39:c3f12@proxy.its.ac.id:8080”
-`
+`export http_proxy=”http://DPTSI-564876-66b39:c3f12@proxy.its.ac.id:8080”`
+`export https_proxy=”http://DPTSI-564876-66b39:c3f12@proxy.its.ac.id:8080”`
+`export ftp_proxy=”http://DPTSI-564876-66b39:c3f12@proxy.its.ac.id:8080”`
+
 
 #### Soal dan Penyelesaian
 1. Membuat domain utama dengan alamat **http://semerut08.pw**
