@@ -68,7 +68,7 @@ Sintaks file **topologi.sh**
 15. Membuat autentikasi web **http://naik.gunung.semerut08.pw** dengan username **"semeru"** dan password **"kuynaikgunung"**
 #### Penyelesaian
 
-16. Meredirect **IP PROBOLINGGO** menuju ke **http://semerut08.pw**
+16. Meredirect IP **PROBOLINGGO** menuju ke **http://semerut08.pw**
 #### Penyelesaian
 
 17. Karena pengunjung pada **/var/www/penanjakan.semerut08.pw/public/images** sangat banyak maka semua request gambar yang memiliki substring "semeru" akan diarahkan menuju semeru.jpg
