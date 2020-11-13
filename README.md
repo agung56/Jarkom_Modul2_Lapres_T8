@@ -1,11 +1,10 @@
 # Jarkom_Modul2_Lapres_T8
-#### Anggota Kelompok:
-1. Kadek Nesya Kurniadewi (05311840000009)
-2. Agung Mulyono (05311840000035)
+### Anggota Kelompok:
+#### 1. Kadek Nesya Kurniadewi (05311840000009)
+#### 2. Agung Mulyono (05311840000035)
 
-Soal Shift Modul2 https://drive.google.com/drive/folders/1Gb90AYZSb-qw38avjn2eKAPxouR3fS8a
-
-### Membuat Topologi Jaringan
+#### Soal Shift Modul2 https://drive.google.com/drive/folders/1Gb90AYZSb-qw38avjn2eKAPxouR3fS8a
+## Membuat Topologi Jaringan
 Sintaks file **topologi.sh**<br>
 ![topologi](https://github.com/agung56/Jarkom_Modul2_Lapres_T8/blob/main/img/topologi.png)
 * Setelah membuat file **topologi.sh**, kemudian bash file tersebut dengan perintah `bash topologi.sh`
@@ -28,7 +27,7 @@ Sintaks file **topologi.sh**<br>
 * Setelah itu lakukan update dengan mengetikkan `apt-get update`
 
 
-### Soal dan Penyelesaian
+## Soal dan Penyelesaian
 ### 1. Membuat domain utama dengan alamat http://semerut08.pw
 #### Penyelesaian
 * Lakukan update pada **MALANG** dengan mengetikkan `apt-get update`
