@@ -218,7 +218,7 @@ Pada folder **/public** dibolehkan *directory listing* namun folder yang ada di 
 * Pindah ke direktori **/etc/apache2/sites-available** dan copy file **default** ke file **naik.gunung.semerut08.pw**
 * Buka file **naik.gunung.semerut08.pw** dan tambahkan konfigurasi seperti dibawah
 ```
-<VirtualHost : *8888>
+<VirtualHost *:8888>
 ServerName naik.gunung.semerut08.pw
 ServerAlias naik.gunung.semerut08.pw
 ```
