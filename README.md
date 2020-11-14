@@ -233,11 +233,11 @@ ServerAlias naik.gunung.semerut08.pw
 ```
 htpasswd -c /etc/apache2/htpasswd semeru
 ```
-   Keterangan:
-   + `htpasswd` : Merupakan nama file dari user account
-   + `-c`	: Untuk membuat file
-   + `/etc/apache2/htpasswd`: Lokasi file htpasswd
-   + `semeru` : Username
+  Keterangan:
+  + `htpasswd` : Merupakan nama file dari user account
+  + `-c`	: Untuk membuat file
+  + `/etc/apache2/htpasswd`: Lokasi file htpasswd
+  + `semeru` : Username
 + Kemudian masukkan username dan password
 + Kemudian buka file **/etc/apache2/sites-available/naik.gunung.semerut08.pw** dan tambahkan konfigurasi berikut
 ```
