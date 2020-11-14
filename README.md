@@ -213,13 +213,44 @@ Pada folder **/public** dibolehkan *directory listing* namun folder yang ada di 
 * Buka file **/etc/apache2/sites-available/penanjakan.semerut08.pw** dan tambahkan konfigurasi seperti berikut<br>
 ![alias](https://github.com/agung56/Jarkom_Modul2_Lapres_T8/blob/main/img/alias.png)<br>
 * Setelah itu restart apache2 dengan mengetikkan `service apache2 restart`
-### 14. Mengatur domain **http://naik.gunung.semerut08.pw** pada port 8888. *DocumentRoot* web berada pada **/var/www/naik.gunung.semerut08.pw**
+### 14. Mengatur domain http://naik.gunung.semerut08.pw pada port 8888. *DocumentRoot* web berada pada var/www/naik.gunung.semerut08.pw
 #### Penyelesaian
-
-### 15. Membuat autentikasi web **http://naik.gunung.semerut08.pw** dengan username **"semeru"** dan password **"kuynaikgunung"**
+* Pindah ke direktori **/etc/apache2/sites-available** dan copy file **default** ke file **naik.gunung.semerut08.pw**
+* Buka file **naik.gunung.semerut08.pw** dan tambahkan konfigurasi seperti dibawah
+```
+<VirtualHost : *8888>
+ServerName naik.gunung.semerut08.pw
+ServerAlias naik.gunung.semerut08.pw
+```
+![naikgunungawal]()
+* Karena web menggunakan port 8888, maka tambahkan **Listen 8888** pada file **/etc/apache2/ports.conf**
+![port]()
+*  Aktifkan konfigurasi **naik.gunung.semerut08.pw** dengan menggunakan perintah `a2ensite naik.gunung.semerut08.pw` dan restart apache2 dengan mengetikkan `service apache2 restart`
+* Pindah ke directori **/var/www**. Lalu unzip file hasil download dari **wget 10.151.36.202/naik.gunung.semeru.pw.zip** dan ubah nama menjadi **naik.gunung.semerut08.pw**
+### 15. Membuat autentikasi web http://naik.gunung.semerut08.pw dengan username "semeru" dan password "kuynaikgunung"
 #### Penyelesaian
-
-### 16. Meredirect IP **PROBOLINGGO** menuju ke **http://semerut08.pw**
++ Membuat user account untuk username dan password
+```
+htpasswd -c /etc/apache2/htpasswd semeru
+```
+   Keterangan:
+   + `htpasswd` : Merupakan nama file dari user account
+   + `-c`	: Untuk membuat file
+   + `/etc/apache2/htpasswd`: Lokasi file htpasswd
+   + `semeru` : Username
++ Kemudian masukkan username dan password
++ Kemudian buka file **/etc/apache2/sites-available/naik.gunung.semerut08.pw** dan tambahkan konfigurasi berikut
+```
+<Directory /var/www/naik.gunung.semerut08.pw>
+  AuthType Basic
+  AuthName "Private Website!"
+  AuthUserFile /etc/apache2/htpasswd
+  Require valid-user
+</Directory>
+```
+![username]()
++ Restart apache2 dengan mengetikkan `service apache2 restart`
+### 16. Meredirect IP PROBOLINGGO menuju ke http://semerut08.pw
 #### Penyelesaian
 * Buka file **/etc/apache2/sites-available/default** dan tambahkan konfigurasi seperti berikut<br>
 ![redirect](https://github.com/agung56/Jarkom_Modul2_Lapres_T8/blob/main/img/redirect.png)<br>
