@@ -253,7 +253,7 @@ htpasswd -c /etc/apache2/htpasswd semeru
 ```
 ![username](https://github.com/agung56/Jarkom_Modul2_Lapres_T8/blob/main/img/username.png)
 + Restart apache2 dengan mengetikkan `service apache2 restart`
-* Tampilan web pada soal nomor 14 akan berubah menjadi tampilan login, seperti gambar dibawah ini :
+* Sebelum masuk ke web **naik.gunung.semerut08.pw:8888** seperti tampilan pada soal nomor 14, harus melakukan login terlebih dahulu, seperti gambar dibawah ini :
 
 ![web15](https://github.com/agung56/Jarkom_Modul2_Lapres_T8/blob/main/img/web15.png)
 ### 16. Meredirect IP PROBOLINGGO menuju ke http://semerut08.pw
