@@ -229,7 +229,7 @@ ServerAlias www.naik.gunung.semerut08.pw
 * Pindah ke directori **/var/www**. Lalu unzip file hasil download dari **wget 10.151.36.202/naik.gunung.semeru.pw.zip** dan ubah nama menjadi **naik.gunung.semerut08.pw**
 * Tampilan web dari **naik.gunung.semerut08.pw:8888** seperti dibawah ini :
 
-![web14]()
+![web14](https://github.com/agung56/Jarkom_Modul2_Lapres_T8/blob/main/img/web14.png)
 ### 15. Membuat autentikasi web http://naik.gunung.semerut08.pw dengan username "semeru" dan password "kuynaikgunung"
 #### Penyelesaian
 + Membuat user account untuk username dan password
@@ -255,7 +255,7 @@ htpasswd -c /etc/apache2/htpasswd semeru
 + Restart apache2 dengan mengetikkan `service apache2 restart`
 * Tampilan web pada soal nomor 14 akan berubah menjadi tampilan login, seperti gambar dibawah ini :
 
-![web15]()
+![web15](https://github.com/agung56/Jarkom_Modul2_Lapres_T8/blob/main/img/web15.png)
 ### 16. Meredirect IP PROBOLINGGO menuju ke http://semerut08.pw
 #### Penyelesaian
 * Buka file **/etc/apache2/sites-available/default** dan tambahkan konfigurasi seperti berikut<br>
