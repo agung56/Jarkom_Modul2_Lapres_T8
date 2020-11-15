@@ -263,3 +263,4 @@ htpasswd -c /etc/apache2/htpasswd semeru
 * Setelah itu restart apache2 dengan mengetikkan `service apache2 restart`
 ### 17. Karena pengunjung pada **/var/www/penanjakan.semerut08.pw/public/images** sangat banyak maka semua request gambar yang memiliki substring "semeru" akan diarahkan menuju semeru.jpg
 #### Penyelesaian
+Kami sudah mencoba dengan berbagai cara tetapi tidak berhasil juga mas :(
