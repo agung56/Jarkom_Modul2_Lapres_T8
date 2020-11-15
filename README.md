@@ -220,7 +220,7 @@ Pada folder **/public** dibolehkan *directory listing* namun folder yang ada di 
 ```
 <VirtualHost *:8888>
 ServerName naik.gunung.semerut08.pw
-ServerAlias naik.gunung.semerut08.pw
+ServerAlias www.naik.gunung.semerut08.pw
 ```
 ![naikgunungawal](https://github.com/agung56/Jarkom_Modul2_Lapres_T8/blob/main/img/naikgunungawal.png)
 * Karena web menggunakan port 8888, maka tambahkan **Listen 8888** pada file **/etc/apache2/ports.conf**
